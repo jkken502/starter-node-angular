@@ -132,7 +132,7 @@ function sshConnect() {
         console.log('Restarting remote services...');
         return restartRemoteServices();
       } else {
-        return Promise.reject(failed.join(', '));
+        return Promise.reject(failed.join(', ')); 
       }
     })
     .then(function() {
